@@ -1,6 +1,6 @@
 # importejam urllib2 moduli, kas lauj dabut majas lapu souce kodu (shis modulis ir OSMC raspberijaa)
-import urllib2
 # kaa ari importejam regex moduli, kas lauj veikt regular expressions.
+import urllib2
 import re
 
 #1. Atver URL un saglaba response content kaa variable code.
