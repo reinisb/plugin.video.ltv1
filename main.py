@@ -6,7 +6,8 @@ import re
 #this is an Atom test
 
 #1. Atver URL un saglaba response content kaa variable code.
-html = urllib2.urlopen("http://embed.ls.lv/ltv1g/index.php") #shis saglabaa response html kaa objektu
+request = urllib2.Request("http://embed.ls.lv/ltv1g/index.php", headers={"Referer" : "http://ltv.lsm.lv/lv/tieshraide/ltv1/live.360/"}) #sheit nodefinee request URL un obligati ari headeri. Ja nebus shis request headeris, tad lapa atgriezis 403 forbidden.
+html = urllib2.urlopen(request) #shis saglabaa response html kaa objektu
 code = html.read() #shis atver obejktu kaa string
 
 # 2. Atrod source code dalju, kas atrodas starp vardem iOS un Android. Tur ari atrodas velamais URL.
