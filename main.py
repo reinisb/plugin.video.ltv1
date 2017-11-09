@@ -27,3 +27,5 @@ for item in url_list:
 
 # 6. Atskanojam stream URL tiklidz addons tiek atverts.
 xbmc.Player().play(stream_url)
+
+# this is a test
